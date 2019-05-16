@@ -1,0 +1,223 @@
+/* CSS for login  */
+body{
+    background-color: #f2f2f2;
+}
+.flipperContainer{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    height: 400px;
+    width: 350px;
+    margin: 50px auto;
+    position: relative;
+    
+}
+.loginContainer{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 4px;
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.infoContainer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emailStatusContainer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.forgotPasswordContainer{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px;
+    border-radius: 4px;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.descriptionContainer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-bottom: 1px solid;
+    background-color: #f44268;
+    
+}
+.descriptionContainer p{
+    color: white;
+}
+.loginFormContainer, .forgotPasswordFormContainer{
+    width: 100%;
+    height: 90%;
+    padding-top: 20px;
+    box-sizing: border-box; 
+}
+
+
+form fieldset{
+    border-style: none;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    margin: 5px 0 30px 0;
+    height: 25px;
+    font-size: 12px;
+    background-color: #f2f2f2;
+}
+
+input[type=submit]{
+    border: none;
+    height: 100%;
+    width: 100px;
+    border: solid 1px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f44268;
+    color: white;
+}
+.errorSection{
+    width: 100%;
+    height: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorSection p{
+    color: red;
+    font-size: 15px;
+}
+.emailStatusContainer p{
+    font-size: 15px;
+}
+.loginButtonContainer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emailButtonContainer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.forgotPasswordButtonContainer, .backToLoginContainer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forgotPasswordButton, #backToLoginButton{
+    width: 40%;
+    height: 40%;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.descriptionContainer p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* CSS for profile */
+.profileContainer{
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 900px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.profilePic{
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    margin-left: 5%;
+    margin-right: 2%; 
+    
+}
+.bio{
+    width: 60%;
+    height: 200px;
+    padding: 2px;
+    
+    
+}
+.userHandle{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.userStats{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: row
+    
+}
+.userDescription{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    
+}
+#followButton {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  height: 70%;
+  background-color: blue;
+  border-radius: 8px;
+  width: 70%;
+  margin-top: 11px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.profileContainer p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.box{
+    height: 100%;
+    width: 15%;
+    text-align: center;
+}
+.buttonBox{
+    
+    height: 100%;
+    width: 15%;
+    text-align: center;
+    
+    
+}

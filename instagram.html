@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Instagram</title>
+    <link rel="stylesheet" href="instagram.css">
+    <template>
+            <!-- Template for user profile -->
+            <div class = "profileContainer">    
+                    <div class="profilePic">
+                    <img src="https://pbs.twimg.com/profile_images/612008607152877572/OzTVFN9K_400x400.jpg" alt="profile picture">
+                    </div>
+                    <div class="bio">
+                        <div class="userHandle">
+                            <div class="box">
+                                <p>@ryuzaki</p>
+                            </div>
+                            <div class="buttonBox">
+                                <button id='followButton'>Follow</button>
+                            </div>        
+                        </div>
+                        <div class="userStats">
+                                <div class="box">
+                                    <p><b>100</b> posts</p>
+                                </div>
+                                <div class="box">
+                                    <p><b id = 'followers'>100</b> followers</p>
+                                </div>
+                                <div class="box">
+                                    <p><b>100</b> following</p>
+                                </div>
+                        </div>
+                        <div class="userDescription">
+                            <p>Ayush Jain: competitive programmer, anime lover.<br />“If you use your head, you won’t get fat even if you eat sweets.” – L Lawliet</p>
+                        </div>    
+                    </div>   
+                </div>
+                
+    </template>
+</head>
+<body>
+    <div class="flipperContainer">
+        <div class="loginContainer">
+            <div class="descriptionContainer">
+                <p>Login into Instagram</p>
+            </div>
+            <div class="loginFormContainer">
+                <form name="loginForm">
+                    <fieldset>
+                        <label>
+                            Username
+                            <input type="text" name="username" required>
+                        </label>
+                        <label>
+                            Password
+                            <input type="password" name="password" required>
+                        </label>
+                    </fieldset>  
+                    <div class="errorSection">
+                        <p></p>
+                    </div>
+                    <div class="loginButtonContainer">
+                        <input type="submit" name="submit" value="Login">
+                            
+                    </div>          
+                </form>
+                <div class="forgotPasswordButtonContainer">
+                    <button id="forgotPasswordButton">Forgot password</button>
+                </div>    
+            </div>        
+        </div>  
+        <div class="forgotPasswordContainer">
+            <div class="descriptionContainer">
+                <p>Account Recovery</p>
+            </div>
+            <div class="forgotPasswordFormContainer">
+                <div class="infoContainer">
+                    <p>A verification code will be sent to the entered email</p>
+                </div>
+                <form name="forgotPasswordForm">
+                    <fieldset>
+                        <label>
+                            email
+                            <input type="text" name="email" required>   
+                        </label>
+                    </fieldset>
+                    <div class="emailStatusContainer">
+                        <p></p>
+                    </div>    
+                    <div class="emailButtonContainer">
+                        <input type="submit" name="submit" value="Send email">
+                                
+                    </div>
+                </form>
+                <div class="backToLoginContainer">
+                    <button id="backToLoginButton">Back to login</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
